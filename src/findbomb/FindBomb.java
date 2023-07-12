@@ -1,10 +1,12 @@
 package findbomb;
 
 public class FindBomb {
-    public boolean findTheBomb(String text) {
-        if (text.contains("bomb")) {
-            return true;
+    public String findTheBomb(String text) {
+        String sentence = text.toLowerCase();
+        if (sentence.contains("bomb")) {
+            return "Duck";
+        } else {
+            return "Relax, there’s no bomb.";
         }
-        return false;
     }
 }
