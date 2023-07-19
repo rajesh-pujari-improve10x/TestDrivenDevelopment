@@ -27,7 +27,7 @@ public class FizzBuzzTest {
     @Test
     public void givenNotDivisibleNumber_returnsNumber() {
         String result = fIzzBuzz.findFizzBuzz(100);
-        assertEquals(result, result);
+        assertEquals("100", result);
     }
 
     @Test
