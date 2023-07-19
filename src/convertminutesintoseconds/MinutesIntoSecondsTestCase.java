@@ -10,9 +10,23 @@ public class MinutesIntoSecondsTestCase {
     public void nothing() {}
 
     @Test
-    public void givenZero_returnsZero() {
+    public void givenZeroMinute_returnsZeroSecond() {
         MinutesIntoSeconds minutesIntoSeconds = new MinutesIntoSeconds();
         int minsIntoSeconds = minutesIntoSeconds.convertMinutesIntoSeconds(0);
         assertEquals(0, minsIntoSeconds);
+    }
+
+    @Test
+    public void givenAnyNegativeNumberMinutes_returnsNegativeNumberSeconds() {
+        MinutesIntoSeconds minutesIntoSeconds = new MinutesIntoSeconds();
+        int minsIntoSeconds = minutesIntoSeconds.convertMinutesIntoSeconds(-10);
+        assertEquals(-600, minsIntoSeconds);
+    }
+
+    @Test
+    public void givenMinutes_returnsSeconds() {
+        MinutesIntoSeconds minutesIntoSeconds = new MinutesIntoSeconds();
+        int minsIntoSeconds = minutesIntoSeconds.convertMinutesIntoSeconds(10);
+        assertEquals(600, minsIntoSeconds);
     }
 }
