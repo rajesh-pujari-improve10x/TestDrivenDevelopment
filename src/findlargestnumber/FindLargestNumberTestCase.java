@@ -31,4 +31,10 @@ public class FindLargestNumberTestCase {
         int zeroValue = findLargestNumber.findLargestElement(new int[] {0});
         assertEquals(0, zeroValue);
     }
+
+    @Test
+    public void givenOne_returnsOne() {
+        int zeroValue = findLargestNumber.findLargestElement(new int[] {0});
+        assertEquals(0, zeroValue);
+    }
 }
