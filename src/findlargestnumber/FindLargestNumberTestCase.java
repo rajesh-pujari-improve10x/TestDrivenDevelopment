@@ -56,4 +56,22 @@ public class FindLargestNumberTestCase {
         int twoOneValue = findLargestNumber.findLargestElement(new int[] {1, 2});
         assertEquals(2, twoOneValue);
     }
+
+    @Test
+    public void givenMinusOneMinusTwo_returnsMinusOne() {
+        int minusTwoMinusOneValue = findLargestNumber.findLargestElement(new int[] {-1, -2});
+        assertEquals(-1, minusTwoMinusOneValue);
+    }
+
+    @Test
+    public void givenAllMinusValues_returnsLargestValue() {
+        int allMinusValues = findLargestNumber.findLargestElement(new int[] {-8, -2, -5, 0, -1, -2});
+        assertEquals(-0, allMinusValues);
+    }
+
+    @Test
+    public void givenAllPositiveValues_returnsLargestValue() {
+        int allPositiveValues = findLargestNumber.findLargestElement(new int[] {8, 2, 5, 10, 1, 2});
+        assertEquals(10, allPositiveValues);
+    }
 }
