@@ -44,4 +44,16 @@ public class FindLargestNumberTestCase {
         int minusOneValue = findLargestNumber.findLargestElement(new int[] {-1});
         assertEquals(-1, minusOneValue);
     }
+
+    @Test
+    public void givenTwoOne_returnsTwo() {
+        int twoOneValue = findLargestNumber.findLargestElement(new int[] {2, 1});
+        assertEquals(2, twoOneValue);
+    }
+
+    @Test
+    public void givenOneTwo_returnsTwo() {
+        int twoOneValue = findLargestNumber.findLargestElement(new int[] {1, 2});
+        assertEquals(2, twoOneValue);
+    }
 }
