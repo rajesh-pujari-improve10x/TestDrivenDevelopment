@@ -40,13 +40,13 @@ public class ArraySortedTestCase {
 
     @Test
     public void givenZeroAndOne_returnsTrue() {
-        boolean zeroAndOneValue = arraySorted.isArraySorted(new int[] {-5,-4,-3,-2});
+        boolean zeroAndOneValue = arraySorted.isArraySorted(new int[] {0, 1});
         assertEquals(true, zeroAndOneValue);
     }
 
     @Test
     public void givenOneAndZero_returnsFalse() {
-        boolean zeroAndOneValue = arraySorted.isArraySorted(new int[] {-0, -1});
+        boolean zeroAndOneValue = arraySorted.isArraySorted(new int[] {1, 0});
         assertEquals(false, zeroAndOneValue);
     }
 }
