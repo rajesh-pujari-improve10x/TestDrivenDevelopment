@@ -64,4 +64,18 @@ public class SumOfTwoElementsReturnYesOrNoTestCase {
         String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {2,6,5,8,11}, 15);
         assertEquals("No", result);
     }
+
+    @Test
+    public void givenMinus265811Values_returnYNo() {
+        SumOfTwoElements sumOfTwoElementsReturnYesOrNo = new SumOfTwoElements();
+        String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {-2,-6,-5,-8,-11}, -20);
+        assertEquals("No", result);
+    }
+
+    @Test
+    public void givenMinusValues_returnYNo() {
+        SumOfTwoElements sumOfTwoElementsReturnYesOrNo = new SumOfTwoElements();
+        String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {-5, 2, -4, 6, 1}, -2);
+        assertEquals("Yes", result);
+    }
 }
