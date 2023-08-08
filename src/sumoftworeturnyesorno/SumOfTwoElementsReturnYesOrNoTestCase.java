@@ -43,4 +43,11 @@ public class SumOfTwoElementsReturnYesOrNoTestCase {
         String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {0, 1}, 1);
         assertEquals("Yes", result);
     }
+
+    @Test
+    public void givenOneZero_returnNo() {
+        SumOfTwoElements sumOfTwoElementsReturnYesOrNo = new SumOfTwoElements();
+        String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {1, 0}, 0);
+        assertEquals("No", result);
+    }
 }

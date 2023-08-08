@@ -6,7 +6,7 @@ public class SumOfTwoElements {
             return "No";
         }
         for (int m = 0; m < books.length; m++) {
-            for (int n = m; n < books.length; n++) {
+            for (int n = m + 1; n < books.length; n++) {
                 if (books[m] + books[n] == target) {
                     return "Yes";
                 }
