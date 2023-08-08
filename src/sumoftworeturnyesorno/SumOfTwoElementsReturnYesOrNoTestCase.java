@@ -24,9 +24,16 @@ public class SumOfTwoElementsReturnYesOrNoTestCase {
     }
 
     @Test
-    public void givenOneValue_returnNo() {
+    public void givenZeroValue_returnNo() {
         SumOfTwoElements sumOfTwoElementsReturnYesOrNo = new SumOfTwoElements();
         String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {0}, 0);
+        assertEquals("No", result);
+    }
+
+    @Test
+    public void givenOneValue_returnNo() {
+        SumOfTwoElements sumOfTwoElementsReturnYesOrNo = new SumOfTwoElements();
+        String result = sumOfTwoElementsReturnYesOrNo.sumOfTwoElementsReturnYesOrNo(new int[] {1}, 0);
         assertEquals("No", result);
     }
 }
