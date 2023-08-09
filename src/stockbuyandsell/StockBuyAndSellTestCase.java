@@ -33,7 +33,14 @@ public class StockBuyAndSellTestCase {
     @Test
     public void givenOneValue_returnZero() {
         StockBuyAndSell stockBuyAndSell = new StockBuyAndSell();
-        int result = stockBuyAndSell.buyAndSellMaxProfit(new int[] {0});
+        int result = stockBuyAndSell.buyAndSellMaxProfit(new int[] {1});
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void givenOneZeroValue_returnZero() {
+        StockBuyAndSell stockBuyAndSell = new StockBuyAndSell();
+        int result = stockBuyAndSell.buyAndSellMaxProfit(new int[] {1, 0});
         assertEquals(0, result);
     }
 }
