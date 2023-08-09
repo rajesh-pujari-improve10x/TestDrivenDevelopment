@@ -23,4 +23,18 @@ public class LeftRotateArrayTestCase {
         int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {});
         assertArrayEquals(new int[] {}, result);
     }
+
+    @Test
+    public void givenZeroValue_returnZero() {
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {0});
+        assertArrayEquals(new int[] {0}, result);
+    }
+
+    @Test
+    public void givenOneValue_returnOne() {
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {1});
+        assertArrayEquals(new int[] {1}, result);
+    }
 }
