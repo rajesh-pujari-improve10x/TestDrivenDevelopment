@@ -11,9 +11,16 @@ public class LeftRotateArrayTestCase {
     public void nothing() {}
 
     @Test
-    public void givenNull_returnZero() {
+    public void givenNull_returnEmpty() {
         LeftRotateArray leftRotateArray = new LeftRotateArray();
         int[] result = leftRotateArray.leftRotateArrayByOne(null);
+        assertArrayEquals(new int[] {}, result);
+    }
+
+    @Test
+    public void givenEmpty_returnEmpty() {
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {});
         assertArrayEquals(new int[] {}, result);
     }
 }
