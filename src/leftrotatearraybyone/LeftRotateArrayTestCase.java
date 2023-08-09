@@ -44,4 +44,18 @@ public class LeftRotateArrayTestCase {
         int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {1, 2, 3, 4, 5});
         assertArrayEquals(new int[] {2, 3, 4, 5, 1}, result);
     }
+
+    @Test
+    public void given345_return453() {
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {3, 4, 5});
+        assertArrayEquals(new int[] {4, 5, 3}, result);
+    }
+
+    @Test
+    public void givenMinusValues452_returnMinus524() {
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] result = leftRotateArray.leftRotateArrayByOne(new int[] {-4, -5, -2});
+        assertArrayEquals(new int[] {-5, -2, -4}, result);
+    }
 }
