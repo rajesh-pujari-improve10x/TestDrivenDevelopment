@@ -15,4 +15,11 @@ public class LargestOddNumberTestCase {
         String nullValue = largestOddNumber.largestOddNumberInStr(null);
         assertEquals("", nullValue);
     }
+
+    @Test
+    public void givenEmpty_returnEmpty() {
+        LargestOddNumber largestOddNumber = new LargestOddNumber();
+        String emptyValue = largestOddNumber.largestOddNumberInStr("");
+        assertEquals("", emptyValue);
+    }
 }
