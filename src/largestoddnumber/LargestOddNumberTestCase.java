@@ -22,4 +22,11 @@ public class LargestOddNumberTestCase {
         String emptyValue = largestOddNumber.largestOddNumberInStr("");
         assertEquals("", emptyValue);
     }
+
+    @Test
+    public void givenZeroValue_returnEmpty() {
+        LargestOddNumber largestOddNumber = new LargestOddNumber();
+        String emptyValue = largestOddNumber.largestOddNumberInStr("0");
+        assertEquals("", emptyValue);
+    }
 }
