@@ -36,4 +36,11 @@ public class LargestOddNumberTestCase {
         String oneValue = largestOddNumber.largestOddNumberInStr("1");
         assertEquals("1", oneValue);
     }
+
+    @Test
+    public void givenTwoValue_returnEmpty() {
+        LargestOddNumber largestOddNumber = new LargestOddNumber();
+        String oneValue = largestOddNumber.largestOddNumberInStr("2");
+        assertEquals("", oneValue);
+    }
 }
