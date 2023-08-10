@@ -64,4 +64,10 @@ public class LargestOddNumberTestCase {
         String result = largestOddNumber.largestOddNumberInStr("35427");
         assertEquals("35427", result);
     }
+
+    @Test
+    public void givenSpacesWith35427_return35427() {
+        String result = largestOddNumber.largestOddNumberInStr("   35427  ");
+        assertEquals("35427", result);
+    }
 }
