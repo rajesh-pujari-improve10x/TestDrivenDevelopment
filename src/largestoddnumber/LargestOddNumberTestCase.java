@@ -26,7 +26,14 @@ public class LargestOddNumberTestCase {
     @Test
     public void givenZeroValue_returnEmpty() {
         LargestOddNumber largestOddNumber = new LargestOddNumber();
-        String emptyValue = largestOddNumber.largestOddNumberInStr("0");
-        assertEquals("", emptyValue);
+        String zeroValue = largestOddNumber.largestOddNumberInStr("0");
+        assertEquals("", zeroValue);
+    }
+
+    @Test
+    public void givenOneValue_returnOne() {
+        LargestOddNumber largestOddNumber = new LargestOddNumber();
+        String oneValue = largestOddNumber.largestOddNumberInStr("1");
+        assertEquals("1", oneValue);
     }
 }
