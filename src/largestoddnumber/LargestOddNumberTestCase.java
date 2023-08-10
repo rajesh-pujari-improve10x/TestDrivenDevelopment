@@ -40,7 +40,14 @@ public class LargestOddNumberTestCase {
     @Test
     public void givenTwoValue_returnEmpty() {
         LargestOddNumber largestOddNumber = new LargestOddNumber();
-        String oneValue = largestOddNumber.largestOddNumberInStr("2");
-        assertEquals("", oneValue);
+        String twoValue = largestOddNumber.largestOddNumberInStr("2");
+        assertEquals("", twoValue);
+    }
+
+    @Test
+    public void givenFiveTwo_returnFive() {
+        LargestOddNumber largestOddNumber = new LargestOddNumber();
+        String fiveTwoValue = largestOddNumber.largestOddNumberInStr("52");
+        assertEquals("5", fiveTwoValue);
     }
 }
