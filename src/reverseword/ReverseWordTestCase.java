@@ -22,4 +22,11 @@ public class ReverseWordTestCase {
         String strReverseWords = reverseWord.reverseWordsInAString("");
         assertEquals("", strReverseWords);
     }
+
+    @Test
+    public void givenRChar_returnR() {
+        ReverseWord reverseWord = new ReverseWord();
+        String strReverseWords = reverseWord.reverseWordsInAString("R");
+        assertEquals("R", strReverseWords);
+    }
 }
