@@ -64,4 +64,11 @@ public class MajorityElementTestCase {
         int majorityValue = majorityElement.findMajorityElement(new int[] {1, 0});
         assertEquals(-1, majorityValue);
     }
+
+    @Test
+    public void givenZeroTwoOnes_returnOne() {
+        MajorityElement majorityElement = new MajorityElement();
+        int majorityValue = majorityElement.findMajorityElement(new int[] {0, 1, 1});
+        assertEquals(1, majorityValue);
+    }
 }
