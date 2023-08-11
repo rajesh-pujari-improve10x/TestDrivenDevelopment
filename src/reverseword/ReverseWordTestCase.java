@@ -2,8 +2,17 @@ package reverseword;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class ReverseWordTestCase {
 
     @Test
     public void nothing() {}
+
+    @Test
+    public void givenNull_returnEmpty() {
+        ReverseWord reverseWord = new ReverseWord();
+        String strReverseWords = reverseWord.reverseWordsInAString(null);
+        assertEquals("", strReverseWords);
+    }
 }
