@@ -64,4 +64,11 @@ public class ReverseWordTestCase {
         String strReverseWords = reverseWord.reverseWordsInAString("Rajesh Pujari");
         assertEquals("Pujari Rajesh", strReverseWords);
     }
+
+    @Test
+    public void givenThisIsAnAmazingProgram_returnProgramAmazingAnIsThis() {
+        ReverseWord reverseWord = new ReverseWord();
+        String strReverseWords = reverseWord.reverseWordsInAString("this is an amazing program");
+        assertEquals("program amazing an is this", strReverseWords);
+    }
 }
