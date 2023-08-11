@@ -29,4 +29,11 @@ public class MajorityElementTestCase {
         int majorityValue = majorityElement.findMajorityElement(new int[] {0});
         assertEquals(0, majorityValue);
     }
+
+    @Test
+    public void givenOneValue_returnOne() {
+        MajorityElement majorityElement = new MajorityElement();
+        int majorityValue = majorityElement.findMajorityElement(new int[] {1});
+        assertEquals(1, majorityValue);
+    }
 }
