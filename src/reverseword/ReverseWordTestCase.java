@@ -43,4 +43,11 @@ public class ReverseWordTestCase {
         String strReverseWords = reverseWord.reverseWordsInAString("   Raj");
         assertEquals("Raj", strReverseWords);
     }
+
+    @Test
+    public void givenRajWithSpacesRightSide_returnRaj() {
+        ReverseWord reverseWord = new ReverseWord();
+        String strReverseWords = reverseWord.reverseWordsInAString("Raj    ");
+        assertEquals("Raj", strReverseWords);
+    }
 }
