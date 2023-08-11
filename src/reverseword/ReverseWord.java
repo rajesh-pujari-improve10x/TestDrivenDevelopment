@@ -2,8 +2,13 @@ package reverseword;
 
 public class ReverseWord {
     public String reverseWordsInAString(String str) {
+        String reverseWord = "";
         if (str != null && !str.equals("")) {
-            return str.trim();
+            String[] words = str.trim().split(" ");
+            for (int i = words.length - 1; i >= 0; i--) {
+                reverseWord += words[i] + " ";
+            }
+            return reverseWord.trim();
         }
         return "";
     }
