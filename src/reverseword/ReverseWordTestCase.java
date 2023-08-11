@@ -15,4 +15,11 @@ public class ReverseWordTestCase {
         String strReverseWords = reverseWord.reverseWordsInAString(null);
         assertEquals("", strReverseWords);
     }
+
+    @Test
+    public void givenEmpty_returnEmpty() {
+        ReverseWord reverseWord = new ReverseWord();
+        String strReverseWords = reverseWord.reverseWordsInAString("");
+        assertEquals("", strReverseWords);
+    }
 }
